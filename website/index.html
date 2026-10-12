@@ -1,0 +1,2058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lazyninja | Creative Archive & Studio</title>
+    <meta name="description" content="Official portfolio and media archive of lazyninja (Chirag Sharma) — Videos, Podcasts, Guests, Music, and Live Streaming.">
+    <meta name="theme-color" content="#E6E8E6">
+    <meta name="referrer" content="no-referrer">
+    
+    <!-- Preload Langdon Brand Font for Instant Header Display -->
+    <link rel="preload" href="assets/fonts/Langdon.otf" as="font" type="font/otf" crossorigin>
+
+    <!-- Google Fonts: Plus Jakarta Sans (Body), JetBrains Mono (Tech & Badges) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="theme-brand">
+    <!-- Top Kinetic Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Interactive Cursor Highlight (Spotlight + Precision Dot) -->
+    <div class="cursor-spotlight" id="cursor-spotlight" aria-hidden="true"></div>
+    <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+
+    <!-- ============================================================ -->
+    <!-- MAIN CREATIVE PORTFOLIO (Minimal White Studio & Archive)     -->
+    <!-- ============================================================ -->
+    <div class="portfolio-wrapper visible" id="portfolio-wrapper">
+        
+        <!-- Minimalist Glass Header -->
+        <header class="navbar" id="navbar">
+            <div class="nav-container">
+                <!-- Left: Photo Logo & Brand -->
+                <div class="nav-left">
+                    <a href="#about" class="brand-logo" aria-label="lazyninja home">
+                        <img src="assets/images/logo.jpg" alt="lazyninja logo" class="brand-logo-img">
+                        <span class="logo-text">LAZYNINJA</span>
+                    </a>
+                </div>
+
+                <!-- Center: Primary Navigation (About Me, Content, Contact Me) -->
+                <nav class="nav-center">
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><button class="nav-tab-btn active" data-nav-target="about"><i class="fa-solid fa-user"></i> About Me</button></li>
+                        <li><button class="nav-tab-btn" data-nav-target="content"><i class="fa-solid fa-layer-group"></i> Content</button></li>
+                        <li><button class="nav-tab-btn" data-nav-target="contact"><i class="fa-solid fa-paper-plane"></i> Contact Me</button></li>
+                    </ul>
+                </nav>
+
+                <!-- Right: Direct Connect Links, Sound & Profile Avatar -->
+                <div class="nav-right">
+                    <!-- Sound Toggle -->
+                    <button class="sound-toggle-btn nav-sound-btn" id="nav-sound-toggle" title="Toggle Audio FX">
+                        <i class="fa-solid fa-volume-high" id="sound-icon-nav"></i>
+                    </button>
+
+                    <!-- Direct Connect Hyperlinks (Instagram, Calendly, Telegram, X, Email) -->
+                    <div class="nav-social-links">
+                        <a href="https://www.instagram.com/chiraagirl/" target="_blank" rel="noopener noreferrer" class="nav-social-icon ig-icon" title="Instagram: @chiraagirl">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://calendly.com/ninjalazy6/30min" target="_blank" rel="noopener noreferrer" class="nav-social-icon cal-icon" title="Book 30-Min Call on Calendly">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </a>
+                        <a href="mailto:ninjalazy6@gmail.com" class="nav-social-icon mail-icon" title="Email: ninjalazy6@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://t.me/Lazyninja31" target="_blank" rel="noopener noreferrer" class="nav-social-icon tg-icon" title="Telegram: @Lazyninja31">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a href="https://x.com/LazyNinjaa31" target="_blank" rel="noopener noreferrer" class="nav-social-icon x-icon" title="X: @LazyNinjaa31">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+
+                    <!-- User Profile Avatar -->
+                    <a href="#about" class="nav-profile" title="About Chirag Sharma (lazyninja)">
+                        <img src="assets/images/logo.jpg" alt="Chirag Sharma profile photo" class="nav-avatar-img">
+                        <span class="nav-status-dot" title="Active"></span>
+                    </a>
+
+                    <!-- Mobile Menu Hamburger -->
+                    <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Open Mobile Menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Drawer -->
+            <div class="mobile-nav-drawer" id="mobile-drawer">
+                <div class="mobile-tabs-list">
+                    <button class="mobile-tab-btn active" data-nav-target="about"><i class="fa-solid fa-user"></i> About Me</button>
+                    <button class="mobile-tab-btn" data-nav-target="content"><i class="fa-solid fa-layer-group"></i> Content</button>
+                    <button class="mobile-tab-btn" data-nav-target="contact"><i class="fa-solid fa-paper-plane"></i> Contact Me</button>
+                </div>
+                <div class="mobile-socials">
+                    <a href="https://www.instagram.com/chiraagirl/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram (@chiraagirl)</a>
+                    <a href="https://calendly.com/ninjalazy6/30min" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-calendar-check"></i> Book 30-Min Call</a>
+                    <a href="mailto:ninjalazy6@gmail.com"><i class="fa-solid fa-envelope"></i> ninjalazy6@gmail.com</a>
+                    <a href="https://t.me/Lazyninja31" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram"></i> Telegram (@Lazyninja31)</a>
+                    <a href="https://x.com/LazyNinjaa31" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i> X (@LazyNinjaa31)</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- ============================================================ -->
+        <!-- LANDING & ABOUT ME HERO (Minimal White Editorial Aesthetic)   -->
+        <!-- ============================================================ -->
+        <section class="about-section landing-hero" id="about">
+            <div class="container">
+                <div class="hero-editorial-grid">
+                    
+                    <!-- Left: Editorial Narrative -->
+                    <div class="hero-editorial-narrative">
+                        <!-- Main Display Title -->
+                        <h1 class="hero-display-title">
+                            your <span class="title-gradient-accent">multi talented creator</span>
+                        </h1>
+
+                        <div class="hero-body-description">
+                            <p>
+                                I'm LazyNinja — a creator, storyteller, rapper, and entertainer with 10 years of experience creating everything from roast videos and pranks to vlogs, IRL adventures, live streams, and original music.
+                            </p>
+                            <p>
+                                Beyond content creation, I help projects bring their vision to life through event organization, creative marketing, and engaging content that connects with their audience.
+                            </p>
+                            <p>
+                                From behind the camera to behind the mic, I'm always exploring new ideas, experimenting with creativity, and finding new ways to make an impact.
+                            </p>
+                            <p class="hero-ethos-highlight">
+                                Creator by passion. Entertainer by nature. Always creating.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Minimalist Portrait & Verified Stats Card -->
+                    <div class="hero-creator-card">
+                        <div class="portrait-card-container">
+                            <div class="portrait-photo-box">
+                                <img src="assets/images/profile.jpg" alt="Chirag Sharma portrait" class="hero-portrait-image">
+                                <div class="portrait-verified-tag">
+                                    <span class="verified-dot"></span>
+                                    <span>VERIFIED CREATOR</span>
+                                </div>
+                            </div>
+
+                            <!-- Crisp Metric Pills -->
+                            <div class="creator-metrics-grid">
+                                <div class="metric-pill">
+                                    <span class="metric-val">6</span>
+                                    <span class="metric-lbl">Media Shelves</span>
+                                </div>
+                                <div class="metric-pill">
+                                    <span class="metric-val">19+</span>
+                                    <span class="metric-lbl">Guests</span>
+                                </div>
+                                <div class="metric-pill">
+                                    <span class="metric-val">500+</span>
+                                    <span class="metric-lbl">Stream Hours</span>
+                                </div>
+                                <div class="metric-pill">
+                                    <span class="metric-val">100%</span>
+                                    <span class="metric-lbl">Independent</span>
+                                </div>
+                            </div>
+
+                            <!-- Ethos Quote Strip -->
+                            <div class="creator-ethos-strip">
+                                <i class="fa-solid fa-quote-left ethos-quote-icon"></i>
+                                <span class="ethos-text">Creator by instinct. Builder by curiosity</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- CONTENT SECTION ANCHOR & THE 6 SHELVES STICKY DOCK          -->
+        <!-- ============================================================ -->
+        <div id="content" class="content-anchor-point"></div>
+        <section class="tabs-control-section" id="tabs-section">
+            <div class="container">
+                <div class="tabs-header-bar">
+                    <div class="tabs-title-group">
+                        <span class="section-tag"><i class="fa-solid fa-compass"></i> STUDIO STREAM</span>
+                        <h2 class="section-heading">Continuous Media Shelves</h2>
+                    </div>
+
+                    <!-- The 6 Exact Categories in User Order with Real-Time ScrollSpy -->
+                    <div class="category-tabs-bar" role="navigation" aria-label="Shelf Navigator">
+                        <button class="content-tab-btn active" data-tab="tab-videos" title="Shelf 01: Videos">
+                            <span class="tab-index">01</span>
+                            <i class="fa-solid fa-video"></i>
+                            <span>Videos</span>
+                            <span class="tab-badge">12 Videos</span>
+                        </button>
+                        <button class="content-tab-btn" data-tab="tab-vlogs" title="Shelf 02: Vlogs">
+                            <span class="tab-index">02</span>
+                            <i class="fa-solid fa-film"></i>
+                            <span>Vlogs</span>
+                            <span class="tab-badge">5 Vlogs</span>
+                        </button>
+                        <button class="content-tab-btn" data-tab="tab-podcasts" title="Shelf 03: Podcasts">
+                            <span class="tab-index">03</span>
+                            <i class="fa-solid fa-podcast"></i>
+                            <span>Podcasts</span>
+                            <span class="tab-badge">6 Ep</span>
+                        </button>
+                        <button class="content-tab-btn" data-tab="tab-streaming" title="Shelf 04: Kick Streaming">
+                            <span class="tab-index">04</span>
+                            <i class="fa-solid fa-tower-broadcast"></i>
+                            <span>Streaming</span>
+                            <span class="tab-badge kick-tab-badge">Kick Live</span>
+                        </button>
+                        <button class="content-tab-btn" data-tab="tab-music" title="Shelf 05: Music">
+                            <span class="tab-index">05</span>
+                            <i class="fa-solid fa-music"></i>
+                            <span>Music</span>
+                            <span class="tab-badge">7 Tracks</span>
+                        </button>
+                        <button class="content-tab-btn" data-tab="tab-guests" title="Shelf 06: Guests">
+                            <span class="tab-index">06</span>
+                            <i class="fa-solid fa-users"></i>
+                            <span>Guests</span>
+                            <span class="tab-badge">19 Guests</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- TAB PANELS (Clean media placeholders awaiting user's links)  -->
+        <!-- ============================================================ -->
+        <main class="tabs-content-container">
+            <div class="container">
+
+                <!-- ==================== SHELF 01: VIDEOS ==================== -->
+                <section class="tab-panel active" id="tab-videos" role="region" aria-label="Videos Shelf">
+                    <div class="panel-header-banner">
+                        <div class="panel-info">
+                            <span class="panel-badge video-badge"><i class="fa-solid fa-video"></i> SHELF 01 // VIDEOS</span>
+                            <h3 class="panel-title">Video Drops</h3>
+                        </div>
+                        <div class="panel-action-group">
+                            <a href="https://x.com/LazyNinjaa31" target="_blank" rel="noopener noreferrer" class="btn btn-outline-sm">
+                                <i class="fa-brands fa-x-twitter"></i>
+                                <span>Videos on X</span>
+                            </a>
+                            <div class="rail-controls">
+                                <button class="rail-arrow-btn rail-prev" data-rail-target="rail-videos" aria-label="Previous Videos" title="Scroll Left">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+                                <button class="rail-arrow-btn rail-next" data-rail-target="rail-videos" aria-label="Next Videos" title="Scroll Right">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-cards-rail" id="rail-videos">
+                        <!-- Video Drop 12 (Latest): HYPERLIQUID -->
+                        <article class="media-slot-card video-card" data-x-url="https://x.com/LazyNinjaa31/status/2077730312994668653?s=20" data-title="HYPERLIQUID 🔫" data-category="DeFi & Ecosystem">
+                            <div class="slot-media-frame video-frame">
+                                <img src="https://pbs.twimg.com/amplify_video_thumb/2077729140388847616/img/O9HaY6rtDGo2HjVC.jpg" alt="HYPERLIQUID 🔫" class="video-thumb" loading="lazy">
+                                <div class="video-play-overlay">
+                                    <div class="video-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill latest-pill video-latest-pill">LATEST VIDEO</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">DeFi & Ecosystem</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">HYPERLIQUID 🔫</h4>
+                                <p class="slot-snippet">High-energy breakdown and visual essay on Hyperliquid perpetuals, decentralized order books, and L1 performance.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/2077730312994668653?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-video" title="Watch Video on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Watch on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Video Drop 11: Your Profile Is Your Resume -->
+                        <article class="media-slot-card video-card" data-x-url="https://x.com/LazyNinjaa31/status/2051930497748775152?s=20" data-title="Your Profile Is Your Resume: Web3 Creativity" data-category="Creator Economy & Solana">
+                            <div class="slot-media-frame video-frame">
+                                <img src="https://pbs.twimg.com/amplify_video_thumb/2051929039468986368/img/gFtuKwcs48ypG4_t.jpg" alt="Your Profile Is Your Resume: Web3 Creativity" class="video-thumb" loading="lazy">
+                                <div class="video-play-overlay">
+                                    <div class="video-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">VIDEO 11</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Creator Economy & Solana</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">Your Profile Is Your Resume: Web3 Creativity</h4>
+                                <p class="slot-snippet">Why your X presence is your true portfolio, selling creativity, and exploring deeper Web3 content partnerships.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/2051930497748775152?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-video" title="Watch Video on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Watch on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Video Drop 10: MeWe Decentralized Social -->
+                        <article class="media-slot-card video-card" data-x-url="https://x.com/LazyNinjaa31/status/2036760366655619433?s=20" data-title="MeWe: Social Network Focused on Privacy & User Control" data-category="Decentralized Social & Privacy">
+                            <div class="slot-media-frame video-frame">
+                                <img src="https://pbs.twimg.com/amplify_video_thumb/2036758541097447424/img/8F0TL1FVQctIa8eY.jpg" alt="MeWe: Privacy & User Control" class="video-thumb" loading="lazy">
+                                <div class="video-play-overlay">
+                                    <div class="video-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">VIDEO 10</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Decentralized Social & Privacy</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">MeWe: Social Network Focused on Privacy & User Control</h4>
+                                <p class="slot-snippet">Exploring next-generation decentralized social networking, data sovereignty, and user-first privacy architectures.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/2036760366655619433?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-video" title="Watch Video on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Watch on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Video Drop 09: Kamigotchi World Powered by Initia -->
+                        <article class="media-slot-card video-card" data-x-url="https://x.com/LazyNinjaa31/status/2036027488837767486?s=20" data-title="Kamigotchi World: New Onchain Universe Powered by Initia" data-category="On-Chain Gaming & Initia">
+                            <div class="slot-media-frame video-frame">
+                                <img src="https://pbs.twimg.com/amplify_video_thumb/2036025584946647040/img/HQ9dA8RVq1idTMQX.jpg" alt="Kamigotchi World Powered by Initia" class="video-thumb" loading="lazy">
+                                <div class="video-play-overlay">
+                                    <div class="video-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">VIDEO 09</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">On-Chain Gaming & Initia</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">Kamigotchi World: New Onchain Universe Powered by Initia</h4>
+                                <p class="slot-snippet">First look at Kamigotchi World, the modular gaming universe powered by Initia's interwoven rollup architecture.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/2036027488837767486?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-video" title="Watch Video on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Watch on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Video Drop 08: POV Valentine's Day -->
+                        <article class="media-slot-card video-card" data-x-url="https://x.com/LazyNinjaa31/status/2022720851720966643?s=20" data-title="POV: Valentine's Day Vibe & Creative Flow" data-category="Lifestyle & Creator POV">
+                            <div class="slot-media-frame video-frame">
+                                <img src="https://pbs.twimg.com/amplify_video_thumb/2022720166497337344/img/iBQmWegw910gHziI.jpg" alt="POV: Valentine's Day" class="video-thumb" loading="lazy">
+                                <div class="video-play-overlay">
+                                    <div class="video-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">VIDEO 08</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Lifestyle & Creator POV</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">POV: Valentine's Day Vibe & Creative Flow</h4>
+                                <p class="slot-snippet">A relatable, cinematic creator POV blending humor, daily life, and creative discipline in the studio.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/2022720851720966643?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-video" title="Watch Video on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Watch on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Video Drop 07: POV Current TL -->
+                        <article class="media-slot-card video-card" data-x-url="https://x.com/LazyNinjaa31/status/2021931926488281382?s=20" data-title="POV: Current TL — Which Card Are You Shilling?" data-category="Web3 Culture & Commentary">
+                            <div class="slot-media-frame video-frame">
+                                <img src="https://pbs.twimg.com/amplify_video_thumb/2021931205961101312/img/jWTum0sAkoAyuhLc.jpg" alt="POV: Current TL" class="video-thumb" loading="lazy">
+                                <div class="video-play-overlay">
+                                    <div class="video-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">VIDEO 07</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Web3 Culture & Commentary</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">POV: Current TL — Which Card Are You Shilling?</h4>
+                                <p class="slot-snippet">Satirical commentary on crypto Twitter timelines, meme card shilling, and decentralized attention dynamics.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/2021931926488281382?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-video" title="Watch Video on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Watch on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Video Drop 06: Connection > Quality -->
+                        <article class="media-slot-card video-card" data-x-url="https://x.com/LazyNinjaa31/status/2018225372286881896?s=20" data-title="Connection > Quality: Honest Creator Breakdown" data-category="Creator Critique & Strategy">
+                            <div class="slot-media-frame video-frame">
+                                <img src="https://pbs.twimg.com/amplify_video_thumb/2018174355193159680/img/Gnm8b1BsTRd7PY6u.jpg" alt="Connection > Quality" class="video-thumb" loading="lazy">
+                                <div class="video-play-overlay">
+                                    <div class="video-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">VIDEO 06</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Creator Critique & Strategy</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">Connection > Quality: Honest Creator Breakdown</h4>
+                                <p class="slot-snippet">Breaking down why authentic connection outperforms sterile high-production content in modern creator communities.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/2018225372286881896?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-video" title="Watch Video on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Watch on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Video Drop 05: It's Time to Rebrand -->
+                        <article class="media-slot-card video-card" data-x-url="https://x.com/LazyNinjaa31/status/2013867089250132009?s=20" data-title="It's Time to Rebrand: The Full Video Vision" data-category="Brand Identity & Strategy">
+                            <div class="slot-media-frame video-frame">
+                                <img src="https://pbs.twimg.com/amplify_video_thumb/2013865779582902276/img/0yOFwvXwLieb1XZH.jpg" alt="It's Time to Rebrand" class="video-thumb" loading="lazy">
+                                <div class="video-play-overlay">
+                                    <div class="video-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">VIDEO 05</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Brand Identity & Strategy</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">It's Time to Rebrand: The Full Video Vision</h4>
+                                <p class="slot-snippet">Comprehensive breakdown on moving beyond PFP aesthetics, doubling down on original video & music, and brand longevity.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/2013867089250132009?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-video" title="Watch Video on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Watch on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Video Drop 04: Time to Help, Not Just Create -->
+                        <article class="media-slot-card video-card" data-x-url="https://x.com/LazyNinjaa31/status/2013197242467815730?s=20" data-title="Time to Help, Not Just Create: Raising Timeline Quality" data-category="Video Production & Craft">
+                            <div class="slot-media-frame video-frame">
+                                <img src="https://pbs.twimg.com/amplify_video_thumb/2013152227733417984/img/0j1i8am8FyOQ_pji.jpg" alt="Time to Help, Not Just Create" class="video-thumb" loading="lazy">
+                                <div class="video-play-overlay">
+                                    <div class="video-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">VIDEO 04</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Video Production & Craft</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">Time to Help, Not Just Create: Raising Timeline Quality</h4>
+                                <p class="slot-snippet">Practical insights on raising production standards, camera framing, and helping fellow creators level up.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/2013197242467815730?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-video" title="Watch Video on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Watch on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Video Drop 03: Rebrand Teaser -->
+                        <article class="media-slot-card video-card" data-x-url="https://x.com/LazyNinjaa31/status/2005931600085733539?s=20" data-title="Rebrand Teaser: 3 Questions for 2026" data-category="Creator Evolution">
+                            <div class="slot-media-frame video-frame">
+                                <img src="https://pbs.twimg.com/amplify_video_thumb/2005920435154628608/img/12bIyu4AMfXXnj4w.jpg" alt="Rebrand Teaser: 3 Questions" class="video-thumb" loading="lazy">
+                                <div class="video-play-overlay">
+                                    <div class="video-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">VIDEO 03</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Creator Evolution</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">Rebrand Teaser: 3 Questions for 2026</h4>
+                                <p class="slot-snippet">Posing core questions on creator growth, audience resonance, and why evolving brand identity is vital in fast-moving Web3.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/2005931600085733539?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-video" title="Watch Video on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Watch on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Video Drop 02: GTA Grand Theft Aptos -->
+                        <article class="media-slot-card video-card" data-x-url="https://x.com/LazyNinjaa31/status/1996108243743932623?s=20" data-title="GTA: Grand Theft Aptos — Indian CJ in Aptos Zone" data-category="Web3 Gaming & Parody">
+                            <div class="slot-media-frame video-frame">
+                                <img src="https://pbs.twimg.com/ext_tw_video_thumb/1996108170654351362/pu/img/bMpVkrpLlPfnbKdr.jpg" alt="GTA Grand Theft Aptos" class="video-thumb" loading="lazy">
+                                <div class="video-play-overlay">
+                                    <div class="video-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">VIDEO 02</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Web3 Gaming & Parody</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">GTA: Grand Theft Aptos — Indian CJ in Aptos Zone</h4>
+                                <p class="slot-snippet">Hilarious cinematic GTA parody mod featuring CJ exploring the Aptos ecosystem and blockchain landmarks.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/1996108243743932623?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-video" title="Watch Video on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Watch on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Video Drop 01: India's Biggest Conference IBW -->
+                        <article class="media-slot-card video-card" data-x-url="https://x.com/LazyNinjaa31/status/1988527126467752308?s=20" data-title="India's Biggest Web3 Conference: IBW Kickoff" data-category="Conferences & IBW">
+                            <div class="slot-media-frame video-frame">
+                                <img src="https://pbs.twimg.com/amplify_video_thumb/1988521244220895232/img/it9dXd7EdkSTA6BD.jpg" alt="India's Biggest Conference: IBW Kickoff" class="video-thumb" loading="lazy">
+                                <div class="video-play-overlay">
+                                    <div class="video-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">VIDEO 01</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Conferences & IBW</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">India's Biggest Web3 Conference: IBW Kickoff</h4>
+                                <p class="slot-snippet">Previewing India Blockchain Week with BasedIndia and Scribble DAO — setting the stage for Asia's premier crypto gathering.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/1988527126467752308?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-video" title="Watch Video on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Watch on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- ==================== SHELF 02: VLOGS ==================== -->
+                <section class="tab-panel" id="tab-vlogs" role="region" aria-label="Vlogs Shelf">
+                    <div class="panel-header-banner">
+                        <div class="panel-info">
+                            <span class="panel-badge vlog-badge"><i class="fa-solid fa-film"></i> SHELF 02 // VLOGS</span>
+                            <h3 class="panel-title">Vlogs & Behind The Scenes</h3>
+                        </div>
+                        <div class="panel-action-group">
+                            <a href="https://x.com/LazyNinjaa31" target="_blank" rel="noopener noreferrer" class="btn btn-outline-sm">
+                                <i class="fa-brands fa-x-twitter"></i>
+                                <span>Vlogs on X</span>
+                            </a>
+                            <div class="rail-controls">
+                                <button class="rail-arrow-btn rail-prev" data-rail-target="rail-vlogs" aria-label="Previous Vlogs" title="Scroll Left">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+                                <button class="rail-arrow-btn rail-next" data-rail-target="rail-vlogs" aria-label="Next Vlogs" title="Scroll Right">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-cards-rail" id="rail-vlogs">
+                        <!-- Vlog Drop 05 (Latest): IBW Wrapped -->
+                        <article class="media-slot-card vlog-card" data-x-url="https://x.com/LazyNinjaa31/status/1997704544571322655?s=20" data-title="IBW Wrapped: India Blockchain Week Recap" data-category="Web3 Conference & IRL">
+                            <div class="slot-media-frame vlog-frame">
+                                <img src="https://pbs.twimg.com/amplify_video_thumb/1997703776862670848/img/t8t5wiPb8jrjFnzv.jpg" alt="IBW Wrapped: India Blockchain Week Recap" class="vlog-thumb" loading="lazy">
+                                <div class="vlog-play-overlay">
+                                    <div class="vlog-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill latest-pill">LATEST VLOG</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Web3 Conference & IRL</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">IBW Wrapped: India Blockchain Week Recap</h4>
+                                <p class="slot-snippet">Finally got some time to edit this! High-energy builder moments, conference insights, and decentralized community vibes.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/1997704544571322655?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-vlog" title="Watch Vlog on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Watch on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Vlog Drop 04: Metamorph Conference Wrap -->
+                        <article class="media-slot-card vlog-card" data-x-url="https://x.com/LazyNinjaa31/status/1972724968048951508?s=20" data-title="Metamorph Conference: That's a Wrap!" data-category="IRL & Conferences">
+                            <div class="slot-media-frame vlog-frame">
+                                <img src="https://pbs.twimg.com/ext_tw_video_thumb/1972724896066154496/pu/img/RhZRAeNjlQA0-m4e.jpg" alt="Metamorph Conference: That's a Wrap!" class="vlog-thumb" loading="lazy">
+                                <div class="vlog-play-overlay">
+                                    <div class="vlog-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">VLOG 04</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">IRL & Conferences</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">Metamorph Conference: That's a Wrap!</h4>
+                                <p class="slot-snippet">Conference recap from the floor — meeting builders, tech showcases, and memorable backstage moments with the community.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/1972724968048951508?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-vlog" title="Watch Vlog on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Watch on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Vlog Drop 03: Metamorph Launch Party -->
+                        <article class="media-slot-card vlog-card" data-x-url="https://x.com/LazyNinjaa31/status/1970581074964291765?s=20" data-title="Metamorph Launch Party: 1st IRL Event!" data-category="Creator Meetup">
+                            <div class="slot-media-frame vlog-frame">
+                                <img src="https://pbs.twimg.com/ext_tw_video_thumb/1970581020605857793/pu/img/R0lcsqtlz0fRhOZb.jpg" alt="Metamorph Launch Party: 1st IRL Event!" class="vlog-thumb" loading="lazy">
+                                <div class="vlog-play-overlay">
+                                    <div class="vlog-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">VLOG 03</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Creator Meetup</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">Metamorph Launch Party: 1st IRL Event!</h4>
+                                <p class="slot-snippet">First IRL event experience — connecting with Web3 content creators, ecosystem founders, and builders ahead of the main event.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/1970581074964291765?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-vlog" title="Watch Vlog on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Watch on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Vlog Drop 02: Weekend Getaway -->
+                        <article class="media-slot-card vlog-card" data-x-url="https://x.com/LazyNinjaa31/status/1951953243015115076?s=20" data-title="Weekend Getaway & Road Trip Mini Vlog" data-category="Travel & Adventure">
+                            <div class="slot-media-frame vlog-frame">
+                                <img src="https://pbs.twimg.com/ext_tw_video_thumb/1951942494075199488/pu/img/CB0zmrmbreAiucvG.jpg" alt="Weekend Getaway & Road Trip Mini Vlog" class="vlog-thumb" loading="lazy">
+                                <div class="vlog-play-overlay">
+                                    <div class="vlog-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">VLOG 02</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Travel & Adventure</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">Weekend Getaway & Road Trip Mini Vlog</h4>
+                                <p class="slot-snippet">Mini vlog from a weekend road trip — scenic landscapes, calm drives, and taking time away from screens to recharge.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/1951953243015115076?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-vlog" title="Watch Vlog on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Watch on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Vlog Drop 01: 2-Day Mountain Trip -->
+                        <article class="media-slot-card vlog-card" data-x-url="https://x.com/LazyNinjaa31/status/1907092225731035216?s=20" data-title="2-Day Mountain Trip & Scenic Adventure 🎥" data-category="Mountain Expeditions">
+                            <div class="slot-media-frame vlog-frame">
+                                <img src="https://pbs.twimg.com/ext_tw_video_thumb/1907092072622063616/pu/img/ZSO9KAYW4sDGsh81.jpg" alt="2-Day Mountain Trip & Scenic Adventure" class="vlog-thumb" loading="lazy">
+                                <div class="vlog-play-overlay">
+                                    <div class="vlog-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">VLOG 01</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Mountain Expeditions</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">2-Day Mountain Trip & Scenic Adventure 🎥</h4>
+                                <p class="slot-snippet">A 2-day mountain journey — amazing and exhausting at the same time, packed with rugged paths, high views, and natural beauty.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/1907092225731035216?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-vlog" title="Watch Vlog on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Watch on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- ==================== SHELF 03: PODCASTS ==================== -->
+                <section class="tab-panel" id="tab-podcasts" role="region" aria-label="Podcasts Shelf">
+                    <div class="panel-header-banner">
+                        <div class="panel-info">
+                            <span class="panel-badge podcast-badge"><i class="fa-solid fa-podcast"></i> SHELF 03 // PODCASTS</span>
+                            <h3 class="panel-title">The Podcast Archive</h3>
+                        </div>
+                        <div class="panel-action-group">
+                            <a href="https://www.youtube.com/@lazyninjaweb3" target="_blank" rel="noopener noreferrer" class="btn btn-outline-sm">
+                                <i class="fa-brands fa-youtube"></i>
+                                <span>All Episodes</span>
+                            </a>
+                            <div class="rail-controls">
+                                <button class="rail-arrow-btn rail-prev" data-rail-target="rail-podcasts" aria-label="Previous Podcasts" title="Scroll Left">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+                                <button class="rail-arrow-btn rail-next" data-rail-target="rail-podcasts" aria-label="Next Podcasts" title="Scroll Right">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-cards-rail" id="rail-podcasts">
+                        <!-- Latest Episode: what has changed over a decade in web3? -->
+                        <article class="media-slot-card podcast-card" data-video-id="A427_ivRpPA" data-title="what has changed over a decade in web3?" data-category="Web3 Retrospective" data-desc="A deep dive retrospective on what has changed over a decade in Web3, crypto culture, creator economies, and decentralization with LazyNinja.">
+                            <div class="slot-media-frame podcast-frame">
+                                <img src="https://i.ytimg.com/vi/A427_ivRpPA/hqdefault.jpg" alt="what has changed over a decade in web3?" class="podcast-thumb" loading="lazy">
+                                <div class="podcast-play-overlay">
+                                    <div class="slot-graphic play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill latest-pill">LATEST EPISODE</span>
+                                <span class="slot-duration-pill">YOUTUBE</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Web3 Retrospective</span>
+                                    <span class="slot-status-live">● Active</span>
+                                </div>
+                                <h4 class="slot-title">what has changed over a decade in web3?</h4>
+                                <p class="slot-snippet">A deep dive retrospective on what has changed over a decade in Web3, crypto culture, builder journeys, and digital decentralization.</p>
+                                <div class="slot-footer-actions">
+                                    <button class="btn-play-episode" title="Watch Episode">
+                                        <i class="fa-solid fa-play"></i> Watch Episode
+                                    </button>
+                                    <a href="https://youtu.be/A427_ivRpPA" target="_blank" rel="noopener noreferrer" class="btn-ext-link" title="Open on YouTube"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Episode 05: Evolution of gaming in web3 -->
+                        <article class="media-slot-card podcast-card" data-video-id="XN02ccTEdNI" data-title="Evolution of gaming in web3 & the reality of founders" data-category="Founder Realities" data-desc="The hard, unfiltered truth about founding a gaming project on-chain, tokenomics, community fatigue, and long-term survival.">
+                            <div class="slot-media-frame podcast-frame">
+                                <img src="https://i.ytimg.com/vi/XN02ccTEdNI/hqdefault.jpg" alt="Evolution of gaming in web3" class="podcast-thumb" loading="lazy">
+                                <div class="podcast-play-overlay">
+                                    <div class="slot-graphic play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">EPISODE 05</span>
+                                <span class="slot-duration-pill">YOUTUBE</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Founder Realities</span>
+                                    <span class="slot-status-live">● Active</span>
+                                </div>
+                                <h4 class="slot-title">Evolution of gaming in web3 & the reality of founders</h4>
+                                <p class="slot-snippet">The hard, unfiltered truth about founding a gaming project on-chain, tokenomics, community fatigue, and survival.</p>
+                                <div class="slot-footer-actions">
+                                    <button class="btn-play-episode" title="Watch Episode">
+                                        <i class="fa-solid fa-play"></i> Watch Episode
+                                    </button>
+                                    <a href="https://youtu.be/XN02ccTEdNI" target="_blank" rel="noopener noreferrer" class="btn-ext-link" title="Open on YouTube"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Episode: Yoga teacher travelling the world -->
+                        <article class="media-slot-card podcast-card" data-video-id="ea4IRAK6UkE" data-title="Yoga teacher travelling the world because of WEB3" data-category="Digital Nomad" data-desc="How Web3 sovereignty and decentralized income enables world travel, lifestyle freedom, and mindful living.">
+                            <div class="slot-media-frame podcast-frame">
+                                <img src="https://i.ytimg.com/vi/ea4IRAK6UkE/hqdefault.jpg" alt="Yoga teacher travelling the world" class="podcast-thumb" loading="lazy">
+                                <div class="podcast-play-overlay">
+                                    <div class="slot-graphic play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">EPISODE 04</span>
+                                <span class="slot-duration-pill">YOUTUBE</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Digital Nomad</span>
+                                    <span class="slot-status-live">● Active</span>
+                                </div>
+                                <h4 class="slot-title">Yoga teacher travelling the world because of WEB3</h4>
+                                <p class="slot-snippet">How Web3 sovereignty and decentralized income enables world travel, lifestyle freedom, and mindful living.</p>
+                                <div class="slot-footer-actions">
+                                    <button class="btn-play-episode" title="Watch Episode">
+                                        <i class="fa-solid fa-play"></i> Watch Episode
+                                    </button>
+                                    <a href="https://youtu.be/ea4IRAK6UkE" target="_blank" rel="noopener noreferrer" class="btn-ext-link" title="Open on YouTube"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Episode: @maximusmic -->
+                        <article class="media-slot-card podcast-card" data-video-id="AAGt6jIvAf0" data-title="From an actor to Web3 Host/Content Creator | @maximusmic" data-category="Web3 Hosting" data-desc="Unpacking the transition from traditional acting to Web3 hosting, community building, and creative broadcasting.">
+                            <div class="slot-media-frame podcast-frame">
+                                <img src="https://i.ytimg.com/vi/AAGt6jIvAf0/hqdefault.jpg" alt="@maximusmic" class="podcast-thumb" loading="lazy">
+                                <div class="podcast-play-overlay">
+                                    <div class="slot-graphic play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">EPISODE 03</span>
+                                <span class="slot-duration-pill">YOUTUBE</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Web3 Hosting</span>
+                                    <span class="slot-status-live">● Active</span>
+                                </div>
+                                <h4 class="slot-title">From an actor to Web3 Host/Content Creator | @maximusmic</h4>
+                                <p class="slot-snippet">Unpacking the transition from traditional acting to Web3 hosting, community building, and creative broadcasting.</p>
+                                <div class="slot-footer-actions">
+                                    <button class="btn-play-episode" title="Watch Episode">
+                                        <i class="fa-solid fa-play"></i> Watch Episode
+                                    </button>
+                                    <a href="https://youtu.be/AAGt6jIvAf0" target="_blank" rel="noopener noreferrer" class="btn-ext-link" title="Open on YouTube"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Episode: Digital Sach -->
+                        <article class="media-slot-card podcast-card" data-video-id="O0x6RDeaDOs" data-title="Multi talented kid to a web3 content creator - Digital Sach" data-category="Creator Journey" data-desc="Exploring the path from multi-talented creative to full-time Web3 content creator with Digital Sach.">
+                            <div class="slot-media-frame podcast-frame">
+                                <img src="https://i.ytimg.com/vi/O0x6RDeaDOs/hqdefault.jpg" alt="Digital Sach" class="podcast-thumb" loading="lazy">
+                                <div class="podcast-play-overlay">
+                                    <div class="slot-graphic play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">EPISODE 02</span>
+                                <span class="slot-duration-pill">YOUTUBE</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Creator Journey</span>
+                                    <span class="slot-status-live">● Active</span>
+                                </div>
+                                <h4 class="slot-title">Multi talented kid to a web3 content creator - Digital Sach</h4>
+                                <p class="slot-snippet">Exploring the path from multi-talented creative to full-time Web3 content creator with Digital Sach.</p>
+                                <div class="slot-footer-actions">
+                                    <button class="btn-play-episode" title="Watch Episode">
+                                        <i class="fa-solid fa-play"></i> Watch Episode
+                                    </button>
+                                    <a href="https://youtu.be/O0x6RDeaDOs" target="_blank" rel="noopener noreferrer" class="btn-ext-link" title="Open on YouTube"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Episode: Himars in conversation -->
+                        <article class="media-slot-card podcast-card" data-video-id="jb9CmrukzwA" data-title="Himars in conversation about web3 gaming, journey and future in web3 | LazyNinja" data-category="Web3 Gaming & Future" data-desc="In-depth dialogue on the evolution of Web3 gaming, navigating the builder journey, and what lies ahead in decentralized entertainment.">
+                            <div class="slot-media-frame podcast-frame">
+                                <img src="https://i.ytimg.com/vi/jb9CmrukzwA/hqdefault.jpg" alt="Himars in conversation about web3 gaming" class="podcast-thumb" loading="lazy">
+                                <div class="podcast-play-overlay">
+                                    <div class="slot-graphic play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="slot-index-pill">EPISODE 01</span>
+                                <span class="slot-duration-pill">YOUTUBE</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Web3 Gaming & Future</span>
+                                    <span class="slot-status-live">● Active</span>
+                                </div>
+                                <h4 class="slot-title">Himars in conversation about web3 gaming, journey and future in web3</h4>
+                                <p class="slot-snippet">In-depth dialogue on the evolution of Web3 gaming, navigating the builder journey, and what lies ahead.</p>
+                                <div class="slot-footer-actions">
+                                    <button class="btn-play-episode" title="Watch Episode">
+                                        <i class="fa-solid fa-play"></i> Watch Episode
+                                    </button>
+                                    <a href="https://youtu.be/jb9CmrukzwA" target="_blank" rel="noopener noreferrer" class="btn-ext-link" title="Open on YouTube"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- ==================== SHELF 04: STREAMING ==================== -->
+                <section class="tab-panel" id="tab-streaming" role="region" aria-label="Streaming Shelf">
+                    <div class="panel-header-banner">
+                        <div class="panel-info">
+                            <span class="panel-badge kick-section-badge"><i class="fa-solid fa-tower-broadcast"></i> SHELF 04 // STREAMING</span>
+                            <h3 class="panel-title">Live Broadcasts & Streams</h3>
+                        </div>
+                        <div class="panel-action-group">
+                            <a href="https://kick.com/lazyvibezzz" target="_blank" rel="noopener noreferrer" class="btn btn-kick-sm">
+                                <i class="fa-solid fa-tower-broadcast"></i>
+                                <span>Watch Live on Kick</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="media-cards-rail single-stream-rail" id="rail-streaming">
+                        <!-- Streaming Slot 01: Official Kick Channel -->
+                        <article class="media-slot-card kick-card featured-kick-card" data-kick-url="https://kick.com/lazyvibezzz" data-title="Kick Live Stream: @lazyvibezzz" data-category="Kick Live">
+                            <div class="slot-media-frame stream-frame kick-frame">
+                                <img src="assets/images/kick-stream-banner.svg" alt="Kick Official Logo" class="stream-thumb kick-thumb" loading="lazy">
+                                <span class="slot-duration-pill kick-live-pill"><i class="fa-solid fa-signal"></i> LIVE</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">kick.com/lazyvibezzz</span>
+                                    <span class="slot-status-live kick-status">● Live Stream Channel</span>
+                                </div>
+                                <h4 class="slot-title">Live Gaming & Web3 Streams: @lazyvibezzz</h4>
+                                <p class="slot-snippet">Join Chirag live on Kick for real-time web3 gaming, build sessions, interactive community chats, and gaming drops.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://kick.com/lazyvibezzz" target="_blank" rel="noopener noreferrer" class="btn-play-episode btn-kick-stream">
+                                        <i class="fa-solid fa-play"></i> Watch on Kick
+                                    </a>
+                                    <a href="https://kick.com/lazyvibezzz" target="_blank" rel="noopener noreferrer" class="btn-ext-link kick-ext-link" title="Open Kick"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- ==================== SHELF 05: MUSIC ==================== -->
+                <section class="tab-panel" id="tab-music" role="region" aria-label="Music Shelf">
+                    <div class="panel-header-banner">
+                        <div class="panel-info">
+                            <span class="panel-badge music-badge"><i class="fa-solid fa-music"></i> SHELF 05 // MUSIC</span>
+                            <h3 class="panel-title">Web3 Rap & Music Archive</h3>
+                        </div>
+                        <div class="panel-action-group">
+                            <a href="https://x.com/LazyNinjaa31" target="_blank" rel="noopener noreferrer" class="btn btn-outline-sm">
+                                <i class="fa-brands fa-x-twitter"></i>
+                                <span>Music on X</span>
+                            </a>
+                            <div class="rail-controls">
+                                <button class="rail-arrow-btn rail-prev" data-rail-target="rail-music" aria-label="Previous Tracks" title="Scroll Left">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+                                <button class="rail-arrow-btn rail-next" data-rail-target="rail-music" aria-label="Next Tracks" title="Scroll Right">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-cards-rail" id="rail-music">
+                        <!-- Music Drop 07 (Latest) -->
+                        <article class="media-slot-card music-card" data-x-url="https://x.com/LazyNinjaa31/status/2099825091475628321?s=20" data-title="Web3 Rap Drop #07: Sovereign Frequency" data-category="Web3 Rap">
+                            <div class="slot-media-frame music-frame">
+                                <div class="music-visual-canvas">
+                                    <div class="music-disc-icon"><i class="fa-solid fa-record-vinyl"></i></div>
+                                    <div class="audio-waveform-bars">
+                                        <span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                                <span class="slot-index-pill latest-pill">LATEST DROP</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Web3 Rap Anthem</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">Web3 Rap Drop #07: Sovereign Frequency</h4>
+                                <p class="slot-snippet">Latest music drop exploring decentralized independence, on-chain energy, and relentless creative rhythm.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/2099825091475628321?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-episode">
+                                        <i class="fa-brands fa-x-twitter"></i> Stream on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Music Drop 06 -->
+                        <article class="media-slot-card music-card" data-x-url="https://x.com/LazyNinjaa31/status/2007719433150861736?s=20" data-title="Web3 Rap Drop #06: The Next Wave" data-category="Web3 Rap">
+                            <div class="slot-media-frame music-frame">
+                                <div class="music-visual-canvas">
+                                    <div class="music-disc-icon"><i class="fa-solid fa-compact-disc"></i></div>
+                                    <div class="audio-waveform-bars">
+                                        <span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                                <span class="slot-index-pill">DROP 06</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Electronic Hip-Hop</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">Web3 Rap Drop #06: The Next Wave</h4>
+                                <p class="slot-snippet">Heavy production beats merging gamer aesthetics with fast-paced delivery and digital storytelling.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/2007719433150861736?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-episode">
+                                        <i class="fa-brands fa-x-twitter"></i> Stream on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Music Drop 05 -->
+                        <article class="media-slot-card music-card" data-x-url="https://x.com/LazyNinjaa31/status/1884564364759543997?s=20" data-title="Web3 Rap Drop #05: Autonomous Bars" data-category="Web3 Rap">
+                            <div class="slot-media-frame music-frame">
+                                <div class="music-visual-canvas">
+                                    <div class="music-disc-icon"><i class="fa-solid fa-music"></i></div>
+                                    <div class="audio-waveform-bars">
+                                        <span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                                <span class="slot-index-pill">DROP 05</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Underground Web3</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">Web3 Rap Drop #05: Autonomous Bars</h4>
+                                <p class="slot-snippet">Raw studio rhymes bridging crypto protocol culture with authentic underground boom-bap rhythm.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/1884564364759543997?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-episode">
+                                        <i class="fa-brands fa-x-twitter"></i> Stream on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Music Drop 04: Abstract Chain -->
+                        <article class="media-slot-card music-card" data-x-url="https://x.com/LazyNinjaa31/status/1872251750008459412?s=20" data-title="Abstract Chain Rap: It's Abstract Time 🟢" data-category="Chain Anthem">
+                            <div class="slot-media-frame music-frame">
+                                <div class="music-visual-canvas">
+                                    <div class="music-disc-icon abstract-chain-icon"><i class="fa-solid fa-bolt"></i></div>
+                                    <div class="audio-waveform-bars">
+                                        <span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                                <span class="slot-index-pill">DROP 04</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Ecosystem Anthem</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">Abstract Chain Rap: It's Abstract Time 🟢</h4>
+                                <p class="slot-snippet">High-octane anthem dedicated to @AbstractChain celebrating consumer crypto, speed, and builder culture.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/1872251750008459412?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-episode">
+                                        <i class="fa-brands fa-x-twitter"></i> Stream on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Music Drop 03: Riftstorm Rap Anthem -->
+                        <article class="media-slot-card music-card" data-x-url="https://x.com/LazyNinjaa31/status/1852617589996019754?s=20" data-title="Riftstorm Universe Rap Anthem — @playRIFTSTORM" data-category="Gaming Anthem">
+                            <div class="slot-media-frame music-frame">
+                                <div class="music-visual-canvas">
+                                    <div class="music-disc-icon gaming-disc-icon"><i class="fa-solid fa-gamepad"></i></div>
+                                    <div class="audio-waveform-bars">
+                                        <span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                                <span class="slot-index-pill">DROP 03</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Gaming Rap Anthem</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">Riftstorm Universe Rap Anthem — @playRIFTSTORM</h4>
+                                <p class="slot-snippet">Inspired by playing Riftstorm and the @xpsr_ debut NFT collection, turning gameplay into an entire rap track.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/1852617589996019754?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-episode">
+                                        <i class="fa-brands fa-x-twitter"></i> Stream on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Music Drop 02 -->
+                        <article class="media-slot-card music-card" data-x-url="https://x.com/LazyNinjaa31/status/1849017565206683926?s=20" data-title="Web3 Gaming Freestyle & Studio Session #02" data-category="Web3 Rap">
+                            <div class="slot-media-frame music-frame">
+                                <div class="music-visual-canvas">
+                                    <div class="music-disc-icon"><i class="fa-solid fa-headphones"></i></div>
+                                    <div class="audio-waveform-bars">
+                                        <span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                                <span class="slot-index-pill">DROP 02</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Studio Freestyle</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">Web3 Gaming Freestyle & Studio Session #02</h4>
+                                <p class="slot-snippet">Second installment in the web3 gaming music series with sharp wordplay and relentless cadence.</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/1849017565206683926?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-episode">
+                                        <i class="fa-brands fa-x-twitter"></i> Stream on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Music Drop 01: Genesis Rap -->
+                        <article class="media-slot-card music-card" data-x-url="https://x.com/LazyNinjaa31/status/1846606913443635590?s=20" data-title="Genesis Rap Announcement: Web2 to Web3 Realm" data-category="Genesis">
+                            <div class="slot-media-frame music-frame">
+                                <div class="music-visual-canvas">
+                                    <div class="music-disc-icon"><i class="fa-solid fa-sparkles"></i></div>
+                                    <div class="audio-waveform-bars">
+                                        <span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                                <span class="slot-index-pill">DROP 01</span>
+                                <span class="slot-duration-pill"><i class="fa-brands fa-x-twitter"></i> X VIDEO</span>
+                            </div>
+                            <div class="slot-details">
+                                <div class="slot-meta-row">
+                                    <span class="slot-category">Genesis Debut</span>
+                                    <span class="slot-status-live">● Active on X</span>
+                                </div>
+                                <h4 class="slot-title">Genesis Rap Announcement: Web2 to Web3 Realm</h4>
+                                <p class="slot-snippet">"Bringing my Web2 passion into the Web3 realm! Creating rap for Web3 games and projects—time to spark a new wave."</p>
+                                <div class="slot-footer-actions">
+                                    <a href="https://x.com/LazyNinjaa31/status/1846606913443635590?s=20" target="_blank" rel="noopener noreferrer" class="btn-play-episode">
+                                        <i class="fa-brands fa-x-twitter"></i> Stream on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- ==================== SHELF 06: GUESTS ==================== -->
+                <section class="tab-panel" id="tab-guests" role="region" aria-label="Guests Shelf">
+                    <div class="panel-header-banner">
+                        <div class="panel-info">
+                            <span class="panel-badge guest-badge"><i class="fa-solid fa-users"></i> SHELF 06 // GUESTS</span>
+                            <h3 class="panel-title">Guest Collaborations & Interviews</h3>
+                        </div>
+                        <div class="panel-action-group">
+                            <a href="https://x.com/LazyNinjaa31" target="_blank" rel="noopener noreferrer" class="btn btn-outline-sm">
+                                <i class="fa-brands fa-x-twitter"></i>
+                                <span>Guests on X</span>
+                            </a>
+                            <div class="rail-controls">
+                                <button class="rail-arrow-btn rail-prev" data-rail-target="rail-guests" aria-label="Previous Guests" title="Scroll Left">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+                                <button class="rail-arrow-btn rail-next" data-rail-target="rail-guests" aria-label="Next Guests" title="Scroll Right">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-cards-rail" id="rail-guests">
+<!-- Guest 19: @agaltsow -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/agaltsow" data-title="AG (@agaltsow)" data-category="Jupiter & Solana Ecosystem">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/61645806/1777168965');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill latest-pill">LATEST GUEST</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 2.8K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="AG (@agaltsow)">
+                                    <img src="https://pbs.twimg.com/profile_images/2100975507638534144/R0SrQxNd_400x400.jpg" alt="AG" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">AG <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/agaltsow" target="_blank" rel="noopener noreferrer" class="guest-handle">@agaltsow</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">Jupiter & Solana Ecosystem</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">Community cat at @JupiterExchange, member of @SuperteamPOL, and Solana builder.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/agaltsow" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @agaltsow on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    
+
+<!-- Guest 18: @AaronHaber -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/AaronHaber" data-title="Aaron Haber (@AaronHaber)" data-category="Founder & Comedy Producer">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/26428696/1785702758');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 18</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 26.2K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="Aaron Haber (@AaronHaber)">
+                                    <img src="https://pbs.twimg.com/profile_images/2084014530687049728/z-H4ntHE_400x400.jpg" alt="Aaron Haber" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">Aaron Haber <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/AaronHaber" target="_blank" rel="noopener noreferrer" class="guest-handle">@AaronHaber</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">Founder & Comedy Producer</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">Co-Founder @UnVault, co-creator of The Divit, and former Princeton comedy instructor.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/AaronHaber" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @AaronHaber on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+<!-- Guest 17: @PocketPullX -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/PocketPullX" data-title="PocketPull (@PocketPullX)" data-category="Card Collecting Platform">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/2041700421111050240/1781303128');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 17</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 1K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="PocketPull (@PocketPullX)">
+                                    <img src="https://pbs.twimg.com/profile_images/2065561306246340608/1Q26uCS5_400x400.jpg" alt="PocketPull" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">PocketPull <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/PocketPullX" target="_blank" rel="noopener noreferrer" class="guest-handle">@PocketPullX</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">Card Collecting Platform</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">Collector-first platform for trading card fans. Rip packs, build collections, and pull rarities.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/PocketPullX" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @PocketPullX on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+<!-- Guest 16: @MortalsHQ -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/MortalsHQ" data-title="Mortals (@MortalsHQ)" data-category="Generative Universe">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/1904996843983106048/1781544221');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 16</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 11.8K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="Mortals (@MortalsHQ)">
+                                    <img src="https://pbs.twimg.com/profile_images/2074969597275500544/A4Ia_ei8_400x400.jpg" alt="Mortals" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">Mortals <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/MortalsHQ" target="_blank" rel="noopener noreferrer" class="guest-handle">@MortalsHQ</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">Generative Universe</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">We are coming to make Mortals immortal. Dynamic digital lore and community universe.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/MortalsHQ" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @MortalsHQ on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+<!-- Guest 15: @GreenAcresNFT -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/GreenAcresNFT" data-title="Green Acres (@GreenAcresNFT)" data-category="Gaming & Web3 Lore">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/1962114869202948097/1756774354');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 15</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 5.8K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="Green Acres (@GreenAcresNFT)">
+                                    <img src="https://pbs.twimg.com/profile_images/1962680004292288512/QhtXXKuJ_400x400.png" alt="Green Acres" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">Green Acres <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/GreenAcresNFT" target="_blank" rel="noopener noreferrer" class="guest-handle">@GreenAcresNFT</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">Gaming & Web3 Lore</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">To keep our land green, we offer our resources to HER. Powered by @GameTheoryWeb3.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/GreenAcresNFT" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @GreenAcresNFT on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+<!-- Guest 14: @nuclearsamurai -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/nuclearsamurai" data-title="Nuclear Samurai (@nuclearsamurai)" data-category="Meme Art & SuperRare">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/1535911719482327040/1772459703');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 14</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 14.4K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="Nuclear Samurai (@nuclearsamurai)">
+                                    <img src="https://pbs.twimg.com/profile_images/2060633288402935808/cXYH63_5_400x400.jpg" alt="Nuclear Samurai" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">Nuclear Samurai <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/nuclearsamurai" target="_blank" rel="noopener noreferrer" class="guest-handle">@nuclearsamurai</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">Meme Art & SuperRare</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">Creator of BRAINROT and X FIGURES, DoomedDAO member, 6529 Memes artist, and SuperRare creator.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/nuclearsamurai" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @nuclearsamurai on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+<!-- Guest 13: @blupixapp -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/blupixapp" data-title="Blupix (@blupixapp)" data-category="Interactive Collectibles">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/2022075458662109184/1780571233');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 13</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 3.5K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="Blupix (@blupixapp)">
+                                    <img src="https://pbs.twimg.com/profile_images/2031749994533781504/49yqb7Sp_400x400.jpg" alt="Blupix" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">Blupix </h4>
+                                    <a href="https://x.com/blupixapp" target="_blank" rel="noopener noreferrer" class="guest-handle">@blupixapp</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">Interactive Collectibles</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">Interactive digital companion ecosystem and virtual pet collectibles on Ethereum.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/blupixapp" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @blupixapp on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+<!-- Guest 12: @R3ORDR -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/R3ORDR" data-title="R3ORDR (@R3ORDR)" data-category="Fine Art & Visuals">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/2054820918052970496/1780500595');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 12</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 10.4K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="R3ORDR (@R3ORDR)">
+                                    <img src="https://pbs.twimg.com/profile_images/2062280536471515137/OCfP7l2c_400x400.jpg" alt="R3ORDR" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">R3ORDR <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/R3ORDR" target="_blank" rel="noopener noreferrer" class="guest-handle">@R3ORDR</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">Fine Art & Visuals</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">Signals are getting harder to ignore. Fine generative visual art and on-chain curation.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/R3ORDR" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @R3ORDR on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+<!-- Guest 11: @just_t00ns -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/just_t00ns" data-title="just t00ns (@just_t00ns)" data-category="Digital Art & Animation">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/1979175789997502464/1774837513');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 11</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 13.9K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="just t00ns (@just_t00ns)">
+                                    <img src="https://pbs.twimg.com/profile_images/2036610575632146433/Nt2HAQdg_400x400.jpg" alt="just t00ns" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">just t00ns <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/just_t00ns" target="_blank" rel="noopener noreferrer" class="guest-handle">@just_t00ns</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">Digital Art & Animation</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">Internet magic art, animated vibes, and community-driven Ethereum digital collectibles.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/just_t00ns" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @just_t00ns on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+<!-- Guest 10: @Claynosaurz -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/Claynosaurz" data-title="Claynosaurz (@Claynosaurz)" data-category="Animation & Character Brand">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/1471666008746250242/1784038015');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 10</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 100.2K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="Claynosaurz (@Claynosaurz)">
+                                    <img src="https://pbs.twimg.com/profile_images/2077009019583987713/liJ-i2NG_400x400.jpg" alt="Claynosaurz" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">Claynosaurz <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/Claynosaurz" target="_blank" rel="noopener noreferrer" class="guest-handle">@Claynosaurz</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">Animation & Character Brand</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">A digital-first character brand and global entertainment & gaming franchise.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/Claynosaurz" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @Claynosaurz on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+<!-- Guest 09: @quirkiesnft -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/quirkiesnft" data-title="Quirkies (@quirkiesnft)" data-category="NFT Universe & Brand">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/1478970178931097601/1772465608');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 09</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 66.7K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="Quirkies (@quirkiesnft)">
+                                    <img src="https://pbs.twimg.com/profile_images/2088765294462337024/vX3KVtgt_400x400.jpg" alt="Quirkies" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">Quirkies <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/quirkiesnft" target="_blank" rel="noopener noreferrer" class="guest-handle">@quirkiesnft</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">NFT Universe & Brand</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">Embrace your quirks. Vibrant NFT character universe, community, and animation studio.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/quirkiesnft" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @quirkiesnft on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+<!-- Guest 08: @OriginalBlokyz -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/OriginalBlokyz" data-title="Blokyz (@OriginalBlokyz)" data-category="Designer Collectibles">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/1965653236305567744/1758690967');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 08</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 22.4K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="Blokyz (@OriginalBlokyz)">
+                                    <img src="https://pbs.twimg.com/profile_images/1970720229387808768/LI376l8s_400x400.jpg" alt="Blokyz" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">Blokyz <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/OriginalBlokyz" target="_blank" rel="noopener noreferrer" class="guest-handle">@OriginalBlokyz</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">Designer Collectibles</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">Creating designer physical & digital collectibles with top Web3 IPs and original worlds.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/OriginalBlokyz" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @OriginalBlokyz on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+<!-- Guest 07: @_HeyZing -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/_HeyZing" data-title="Zing (@_HeyZing)" data-category="Prediction Markets">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/1380292033558900738/1787951357');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 07</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 6.9K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="Zing (@_HeyZing)">
+                                    <img src="https://pbs.twimg.com/profile_images/2093445840807526400/aidrkApA_400x400.jpg" alt="Zing" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">Zing <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/_HeyZing" target="_blank" rel="noopener noreferrer" class="guest-handle">@_HeyZing</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">Prediction Markets</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">Top 1% prediction specialist on @Polymarket covering sports and on-chain odds.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/_HeyZing" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @_HeyZing on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+<!-- Guest 06: @marcellovtv -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/marcellovtv" data-title="Marcello (@marcellovtv)" data-category="Gaming & Guild Founder">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/1369664898024767488/1781070579');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 06</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 16.3K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="Marcello (@marcellovtv)">
+                                    <img src="https://pbs.twimg.com/profile_images/2048229624803688448/myl9HYh7_400x400.jpg" alt="Marcello" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">Marcello <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/marcellovtv" target="_blank" rel="noopener noreferrer" class="guest-handle">@marcellovtv</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">Gaming & Guild Founder</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">Co-Founder @NovaGamingGuild, host of @M3LEE_LIVE, and ecosystem ambassador.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/marcellovtv" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @marcellovtv on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+<!-- Guest 05: @IRA_therabbit -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/IRA_therabbit" data-title="IRA (@IRA_therabbit)" data-category="Art & Culture Host">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/1415992078631321605/1787836653');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 05</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 19.2K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="IRA (@IRA_therabbit)">
+                                    <img src="https://pbs.twimg.com/profile_images/2071949106356920320/d-T3RrK-_400x400.jpg" alt="IRA" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">IRA <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/IRA_therabbit" target="_blank" rel="noopener noreferrer" class="guest-handle">@IRA_therabbit</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">Art & Culture Host</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">Art & Culture livestream host with founders, digital artists & creators. Azuki Monday host.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/IRA_therabbit" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @IRA_therabbit on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+<!-- Guest 04: @maximusss -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/maximusss" data-title="MAXIMUS (@maximusss)" data-category="Spaces Host & Podcaster">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/1513146040119185408/1788370442');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 04</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 9.4K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="MAXIMUS (@maximusss)">
+                                    <img src="https://pbs.twimg.com/profile_images/1994797914447560704/qym0hNEC_400x400.jpg" alt="MAXIMUS" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">MAXIMUS <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/maximusss" target="_blank" rel="noopener noreferrer" class="guest-handle">@maximusss</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">Spaces Host & Podcaster</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">Podcaster, creative mind & Spaces host. Head of community at @PudgyUkraine.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/maximusss" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @maximusss on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+<!-- Guest 03: @coinempress -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/coinempress" data-title="vana (@coinempress)" data-category="Video Strategist">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/1330738169822785540/1777215658');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 03</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 9.4K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="vana (@coinempress)">
+                                    <img src="https://pbs.twimg.com/profile_images/2089985131607908352/EOCirUM9_400x400.jpg" alt="vana" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">vana <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/coinempress" target="_blank" rel="noopener noreferrer" class="guest-handle">@coinempress</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">Video Strategist</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">Video creator & strategist. Founder @creatorarchq and core member of @superteamblkn.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/coinempress" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @coinempress on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+<!-- Guest 02: @speak_SACH_in -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/speak_SACH_in" data-title="DigitalSach (@speak_SACH_in)" data-category="Content Creator">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/3014959367/1775753676');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 02</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 2.2K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="DigitalSach (@speak_SACH_in)">
+                                    <img src="https://pbs.twimg.com/profile_images/2001945477378629635/-_ts_tEY_400x400.jpg" alt="DigitalSach" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">DigitalSach <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/speak_SACH_in" target="_blank" rel="noopener noreferrer" class="guest-handle">@speak_SACH_in</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">Content Creator</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">Everything Everywhere All at Once. The real "Jack of all trades" & Web3 content builder.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/speak_SACH_in" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @speak_SACH_in on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+<!-- Guest 01: @himars -->
+                        <article class="media-slot-card guest-card" data-x-url="https://x.com/himars" data-title="HIMARS (@himars)" data-category="DeFi & Trading">
+                            <div class="guest-banner-header" style="background-image: url('https://pbs.twimg.com/profile_banners/846091125513502725/1783968788');">
+                                <div class="guest-banner-overlay"></div>
+                                <span class="slot-index-pill guest-index-pill">GUEST 01</span>
+                                <span class="guest-followers-pill"><i class="fa-solid fa-users"></i> 6.8K</span>
+                            </div>
+                            <div class="guest-pfp-wrapper">
+                                <div class="guest-avatar-spotlight" title="HIMARS (@himars)">
+                                    <img src="https://pbs.twimg.com/profile_images/1965408901693603840/_jaGhBVD_400x400.jpg" alt="HIMARS" class="guest-avatar-img" referrerpolicy="no-referrer" loading="lazy">
+                                    <div class="guest-avatar-glow"></div>
+                                    <div class="guest-avatar-ring"></div>
+                                </div>
+                            </div>
+                            <div class="slot-details guest-details">
+                                <div class="guest-identity-row">
+                                    <h4 class="guest-name">HIMARS <span class="guest-verified-icon" title="Verified on X"><i class="fa-solid fa-circle-check"></i></span></h4>
+                                    <a href="https://x.com/himars" target="_blank" rel="noopener noreferrer" class="guest-handle">@himars</a>
+                                </div>
+                                <div class="guest-category-row">
+                                    <span class="slot-category guest-category-tag">DeFi & Trading</span>
+                                    <span class="guest-live-status"><span class="guest-live-dot"></span> Active Guest</span>
+                                </div>
+                                <p class="slot-snippet guest-bio">Tradoor and meme-positive degen cooking at @potionalpha and @deltaliquidity.</p>
+                                <div class="slot-footer-actions guest-footer-actions">
+                                    <a href="https://x.com/himars" target="_blank" rel="noopener noreferrer" class="btn-guest-connect" title="View @himars on X">
+                                        <i class="fa-brands fa-x-twitter"></i> Connect on X
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- ============================================================ -->
+        <!-- CONTACT ME SECTION (Last Section Before Footer)             -->
+        <!-- ============================================================ -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-header">
+                    <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> DIRECT REACH</span>
+                    <h2 class="section-heading">Contact & Collaboration</h2>
+                    <p class="section-subheading">Book a 30-minute session, discuss Web3 partnerships, or drop an inquiry directly to Chirag.</p>
+                </div>
+
+                <div class="contact-cards-grid">
+                    <!-- 1. Calendly Card -->
+                    <a href="https://calendly.com/ninjalazy6/30min" target="_blank" rel="noopener noreferrer" class="contact-card calendly-card" aria-label="Book a 30-min call on Calendly">
+                        <div class="contact-glow calendly-glow"></div>
+                        <div class="contact-top">
+                            <div class="contact-icon-box calendly-box">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <span class="contact-badge calendly-badge">INSTANT CALENDAR</span>
+                        </div>
+                        <div class="contact-body">
+                            <span class="contact-handle">calendly.com/ninjalazy6/30min</span>
+                            <h3 class="contact-title">Book a 30-Min Call</h3>
+                            <p class="contact-desc">1-on-1 strategy session, Web3 development advisory, brand partnerships, or creative jams.</p>
+                        </div>
+                        <div class="contact-footer">
+                            <span class="contact-cta calendly-cta">
+                                <span>Schedule Time on Calendly</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- 2. Email Card -->
+                    <div class="contact-card email-card">
+                        <div class="contact-glow email-glow"></div>
+                        <div class="contact-top">
+                            <div class="contact-icon-box email-box">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <span class="contact-badge email-badge">DIRECT INBOX</span>
+                        </div>
+                        <div class="contact-body">
+                            <span class="contact-handle">ninjalazy6@gmail.com</span>
+                            <h3 class="contact-title">Direct Email</h3>
+                            <p class="contact-desc">Send proposals, sponsorship briefs, guest requests, or business inquiries directly to my inbox.</p>
+                        </div>
+                        <div class="contact-footer email-action-row">
+                            <a href="mailto:ninjalazy6@gmail.com" class="contact-cta email-cta" title="Compose Email">
+                                <span>Send Email</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </a>
+                            <button class="btn-copy-email" id="btn-copy-email" data-email="ninjalazy6@gmail.com" title="Copy email address">
+                                <i class="fa-regular fa-copy"></i>
+                                <span>Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 3. Telegram Card -->
+                    <a href="https://t.me/Lazyninja31" target="_blank" rel="noopener noreferrer" class="contact-card tg-card" aria-label="Message on Telegram @Lazyninja31">
+                        <div class="contact-glow tg-glow"></div>
+                        <div class="contact-top">
+                            <div class="contact-icon-box tg-box">
+                                <i class="fa-brands fa-telegram"></i>
+                            </div>
+                            <span class="contact-badge tg-badge">FASTEST WEB3 CHAT</span>
+                        </div>
+                        <div class="contact-body">
+                            <span class="contact-handle">t.me/Lazyninja31</span>
+                            <h3 class="contact-title">Telegram Chat</h3>
+                            <p class="contact-desc">Real-time developer talk, quick pings, community alpha, and direct encrypted chat.</p>
+                        </div>
+                        <div class="contact-footer">
+                            <span class="contact-cta tg-cta">
+                                <span>Chat on Telegram</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- 4. X (Twitter) Card -->
+                    <a href="https://x.com/LazyNinjaa31" target="_blank" rel="noopener noreferrer" class="contact-card x-card" aria-label="Direct Message on X @LazyNinjaa31">
+                        <div class="contact-glow x-glow"></div>
+                        <div class="contact-top">
+                            <div class="contact-icon-box x-box">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </div>
+                            <span class="contact-badge x-badge">DIRECT MESSAGES</span>
+                        </div>
+                        <div class="contact-body">
+                            <span class="contact-handle">@LazyNinjaa31</span>
+                            <h3 class="contact-title">X (Twitter) Feed & DMs</h3>
+                            <p class="contact-desc">Open DMs for protocol threads, hip-hop music reactions, thoughts, and community chats.</p>
+                        </div>
+                        <div class="contact-footer">
+                            <span class="contact-cta x-cta">
+                                <span>DM / Follow on X</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Secondary Broadcast Channels Strip -->
+                <div class="contact-channels-strip">
+                    <span class="strip-label"><i class="fa-solid fa-satellite-dish"></i> Also Streaming & Posting on:</span>
+                    <div class="strip-links">
+                        <a href="https://kick.com/lazyvibezzz" target="_blank" rel="noopener noreferrer" class="strip-pill kick-strip">
+                            <i class="fa-solid fa-tower-broadcast"></i> <span>Kick Live (@lazyvibezzz)</span>
+                        </a>
+                        <a href="https://www.youtube.com/@lazyninjaweb3" target="_blank" rel="noopener noreferrer" class="strip-pill yt-strip">
+                            <i class="fa-brands fa-youtube"></i> <span>YouTube Channel</span>
+                        </a>
+                        <a href="https://www.instagram.com/chiraagirl/" target="_blank" rel="noopener noreferrer" class="strip-pill ig-strip">
+                            <i class="fa-brands fa-instagram"></i> <span>Instagram (@chiraagirl)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- STREAMING FOOTER                                            -->
+        <!-- ============================================================ -->
+        <footer class="stream-footer">
+            <div class="container footer-content">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a href="#about" class="footer-logo">
+                            <img src="assets/images/logo.jpg" alt="lazyninja logo" class="brand-logo-img">
+                            <span class="logo-text">LAZYNINJA</span>
+                        </a>
+                        <p class="footer-tagline">Videos, Vlogs, Podcasts, Streaming, Music & Guests archive of Chirag Sharma.</p>
+                    </div>
+
+                    <div class="footer-nav-col">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><button class="footer-tab-link" data-nav-target="about"><i class="fa-solid fa-user"></i> About Me</button></li>
+                            <li><button class="footer-tab-link" data-nav-target="content"><i class="fa-solid fa-layer-group"></i> Content Shelves</button></li>
+                            <li><button class="footer-tab-link" data-nav-target="contact"><i class="fa-solid fa-paper-plane"></i> Contact Me</button></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-nav-col">
+                        <h4>Direct Connect</h4>
+                        <ul>
+                            <li><a href="https://calendly.com/ninjalazy6/30min" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-calendar-check"></i> Calendly (30 Min)</a></li>
+                            <li><a href="mailto:ninjalazy6@gmail.com"><i class="fa-solid fa-envelope"></i> ninjalazy6@gmail.com</a></li>
+                            <li><a href="https://t.me/Lazyninja31" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram"></i> Telegram (@Lazyninja31)</a></li>
+                            <li><a href="https://x.com/LazyNinjaa31" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i> X (@LazyNinjaa31)</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-nav-col">
+                        <h4>Broadcast Channels</h4>
+                        <ul>
+                            <li><a href="https://kick.com/lazyvibezzz" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-tower-broadcast"></i> Kick Live</a></li>
+                            <li><a href="https://www.youtube.com/@lazyninjaweb3" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+                            <li><a href="https://www.instagram.com/chiraagirl/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                            <li><button class="footer-back-top" id="btn-back-to-top"><i class="fa-solid fa-arrow-up"></i> Back to Top</button></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="copyright">&copy; 2026 lazyninja (Chirag Sharma). All rights reserved.</p>
+                    <div class="footer-system-badges">
+                        <span class="badge-item">MINIMALIST ARCHIVE</span>
+                        <span class="badge-item">BESPOKE UI</span>
+                        <span class="badge-item">ZERO BLOAT</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div><!-- End of .portfolio-wrapper -->
+
+    <!-- ============================================================ -->
+    <!-- PLAYABLE VIDEO MODAL (Streams active YouTube episodes)       -->
+    <!-- ============================================================ -->
+    <div class="video-modal-backdrop" id="video-modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="video-modal-container">
+            <button class="modal-close-btn" id="video-modal-close" aria-label="Close Video">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-player-stage">
+                <iframe id="modal-video-iframe" src="" title="YouTube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-video-meta">
+                <div class="modal-badge-row">
+                    <span class="modal-section-badge" id="modal-video-category">PODCAST</span>
+                    <span class="modal-status-badge">● STREAMING VIA YOUTUBE</span>
+                </div>
+                <h3 class="modal-video-title" id="modal-video-title">Episode Title</h3>
+                <p class="modal-video-desc" id="modal-video-desc">Episode description goes here.</p>
+                <div class="modal-video-actions">
+                    <a href="" target="_blank" rel="noopener noreferrer" class="btn btn-modal-primary" id="modal-video-yt-link">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span>Watch on YouTube</span>
+                    </a>
+                    <a href="https://x.com/LazyNinjaa31" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <span>Discuss on X</span>
+                    </a>
+                    <a href="https://www.instagram.com/chiraagirl/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Connect on Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SLOT INFO MODAL (Clean popup when clicking any card)        -->
+    <!-- ============================================================ -->
+    <div class="slot-modal-backdrop" id="slot-modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="slot-modal-box">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="modal-badge-row">
+                <span class="modal-section-badge" id="modal-sec-badge">VIDEOS</span>
+                <span class="modal-status-badge">SLOT CONFIGURED & READY</span>
+            </div>
+
+            <h3 class="modal-slot-title" id="modal-slot-title">Slot Title</h3>
+            
+            <div class="modal-slot-body">
+                <p>This slot is prepared and waiting for your link. You can drop in any YouTube video, podcast link, audio stream, or broadcast link whenever you're ready.</p>
+                <div class="modal-code-snippet">
+                    <span class="code-label">Paste in website/index.html:</span>
+                    <code>data-video-url="https://www.youtube.com/watch?v=..."</code>
+                </div>
+            </div>
+
+            <div class="modal-actions-group">
+                <a href="https://www.youtube.com/@lazyninjaweb3" target="_blank" rel="noopener noreferrer" class="btn btn-modal-primary">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span>Visit YouTube Channel</span>
+                </a>
+                <button class="btn btn-modal-dismiss" id="modal-dismiss-btn">
+                    <span>Close</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toast-notification" aria-live="polite"></div>
+
+    <!-- Main JavaScript Logic -->
+    <script src="js/script.js"></script>
+</body>
+</html>
